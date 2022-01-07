@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace Game
 {
@@ -11,10 +10,13 @@ namespace Game
         [SerializeField] private GameObject availableObject;
         [SerializeField] private GameObject createdObject;
 
+        private LoadingScreen _loadingScreen;
         private Save _save;
 
-        private void Awake()
+        private void Start()
         {
+            _loadingScreen = FindObjectOfType<LoadingScreen>();
+            
             bool saveIsCreated = Save.IsValid(saveName);
             UpdateActiveObject(saveIsCreated);
 
@@ -31,16 +33,22 @@ namespace Game
         public void CreateSave()
         {
             _save = new Save(saveName);
-            _save.SaveData.Add("CurrentScene", defaultScene);
+            _save.Data.Add("CurrentScene", defaultScene);
             _save.Write();
             
             UpdateActiveObject(true);
         }
 
-        public void LoadSave()
+        public async void LoadSave()
         {
-            var currentScene = (string) _save.SaveData["CurrentScene"];
-            SceneManager.LoadScene(currentScene);
+            await _loadingScreen.Show();
+
+            var targetScene = (string) _save.Data["CurrentScene"];
+            await SceneLoader.LoadScene(targetScene, false);
+            var gameplayInitializer = FindObjectOfType<GameplayInitializer>();
+            await gameplayInitializer.Initialize(_save);
+
+            await _loadingScreen.Hide();
         }
 
         public void DeleteSave()

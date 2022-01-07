@@ -9,26 +9,25 @@ namespace Game
     [Serializable]
     public class Save
     {
-        public Dictionary<string, object> SaveData;
-
-        private string _saveName;
+        public Dictionary<string, object> Data { get; private set; }
+        public string Name { get; private set; }
         
         public Save(string saveName)
         {
-            SaveData = new Dictionary<string, object>();
-            _saveName = saveName;
+            Data = new Dictionary<string, object>();
+            Name = saveName;
             
             if (IsValid())
-                Debug.LogWarning($"There already exists a save named {_saveName}! Be careful writing.");
+                Debug.LogWarning($"There already exists a save \"{Name}\"! Be careful writing.");
             
-            Debug.Log($"Created new save with name {saveName}.");
+            Debug.Log($"Created new save \"{saveName}\".");
         }
 
         #region Instance Methods
 
         public void Write()
         {
-            Debug.Log($"Updated save {_saveName}.");
+            Debug.Log($"Updated save {Name}.");
             
             // Creates a new file for the save.
             string savePath = GetPath();
@@ -43,7 +42,7 @@ namespace Game
         {
             if (IsValid())
             {
-                Debug.Log($"Deleted save {_saveName}.");
+                Debug.Log($"Deleted save {Name}.");
                 
                 string savePath = GetPath();
                 File.Delete(savePath);
@@ -52,12 +51,12 @@ namespace Game
         
         public bool IsValid()
         {
-            return IsValid(_saveName);
+            return IsValid(Name);
         }
 
         public string GetPath()
         {
-            return GetPath(_saveName);
+            return GetPath(Name);
         }
 
         #endregion
@@ -67,9 +66,9 @@ namespace Game
         public static Save Read(string saveName)
         {
             if (IsValid(saveName) == false)
-                throw new FileNotFoundException($"Tried to open a save {saveName} that doesn't exist!");
+                throw new FileNotFoundException($"Tried to open the save \"{saveName}\" that doesn't exist!");
         
-            Debug.Log($"Accessed the save {saveName}.");
+            Debug.Log($"Accessed the save \"{saveName}\".");
             
             // Opens the save file.
             string savePath = GetPath(saveName);

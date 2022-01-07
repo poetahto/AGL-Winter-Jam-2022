@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Cysharp.Threading.Tasks;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Game
@@ -6,10 +7,12 @@ namespace Game
     public class LoadMenuBehaviour : MonoBehaviour
     {
         [SerializeField] private string mainMenuName = "Main Menu";
+        [SerializeField] private string gameplaySceneName = "Gameplay";
         
-        public void LoadMenu()
+        public async void LoadMenu()
         {
-            SceneManager.LoadScene(mainMenuName);
+            await SceneManager.UnloadSceneAsync(gameplaySceneName);
+            await SceneLoader.LoadScene(mainMenuName);
         }
     }
 }

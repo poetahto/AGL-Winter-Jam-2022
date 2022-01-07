@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Cysharp.Threading.Tasks;
+using UnityEngine;
 
 namespace Game
 {
@@ -10,12 +11,12 @@ namespace Game
         [SerializeField] private GameObject availableObject;
         [SerializeField] private GameObject createdObject;
 
-        private LoadingScreen _loadingScreen;
+        private GameplaySystem _gameplaySystem;
         private Save _save;
 
         private void Start()
         {
-            _loadingScreen = FindObjectOfType<LoadingScreen>();
+            _gameplaySystem = FindObjectOfType<GameplaySystem>();
             
             bool saveIsCreated = Save.IsValid(saveName);
             UpdateActiveObject(saveIsCreated);
@@ -36,18 +37,16 @@ namespace Game
             {
                 CurrentScene = defaultScene
             };
+
+            _save.Triggers.Add("Tutorial");
             _save.Write();
-            
+
             UpdateActiveObject(true);
         }
 
-        public async void LoadSave()
+        public void LoadSave()
         {
-            await _loadingScreen.Show();
-            
-            await SceneLoader.LoadScene(targetScene, false);
-            
-            await _loadingScreen.Hide();
+            _gameplaySystem.StartGameplay(_save).Forget();
         }
 
         public void DeleteSave()

@@ -1,14 +1,20 @@
-﻿using UnityEngine;
+﻿using Cysharp.Threading.Tasks;
+using UnityEngine;
 
 namespace Game
 {
     public class LoadMenuBehaviour : MonoBehaviour
     {
-        [SerializeField] private string mainMenuName = "Main Menu";
-        
-        public async void LoadMenu()
+        private GameplaySystem _gameplaySystem;
+
+        private void Start()
         {
-            await SceneLoader.LoadScene(mainMenuName);
+            _gameplaySystem = FindObjectOfType<GameplaySystem>();
+        }
+
+        public void LoadMenu()
+        {
+            _gameplaySystem.StopGameplay().Forget();
         }
     }
 }

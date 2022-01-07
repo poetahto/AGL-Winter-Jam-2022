@@ -9,12 +9,13 @@ namespace Game
     [Serializable]
     public class Save
     {
-        public Dictionary<string, object> Data { get; private set; }
+        public string CurrentScene { get; set; }
+        public HashSet<string> Triggers { get; private set; }
         public string Name { get; private set; }
         
         public Save(string saveName)
         {
-            Data = new Dictionary<string, object>();
+            Triggers = new HashSet<string>();
             Name = saveName;
             
             if (IsValid())

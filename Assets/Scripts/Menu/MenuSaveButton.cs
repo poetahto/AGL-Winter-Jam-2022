@@ -5,7 +5,7 @@ namespace Game
     public class MenuSaveButton : MonoBehaviour
     {
         [SerializeField] private string saveName = "Default Save Name";
-        [SerializeField] private string defaultScene = "Gameplay";
+        [SerializeField] private string defaultScene = "Gameplay 1";
         
         [SerializeField] private GameObject availableObject;
         [SerializeField] private GameObject createdObject;
@@ -32,8 +32,10 @@ namespace Game
 
         public void CreateSave()
         {
-            _save = new Save(saveName);
-            _save.Data.Add("CurrentScene", defaultScene);
+            _save = new Save(saveName)
+            {
+                CurrentScene = defaultScene
+            };
             _save.Write();
             
             UpdateActiveObject(true);
@@ -42,12 +44,9 @@ namespace Game
         public async void LoadSave()
         {
             await _loadingScreen.Show();
-
-            var targetScene = (string) _save.Data["CurrentScene"];
+            
             await SceneLoader.LoadScene(targetScene, false);
-            var gameplayInitializer = FindObjectOfType<GameplayInitializer>();
-            await gameplayInitializer.Initialize(_save);
-
+            
             await _loadingScreen.Hide();
         }
 

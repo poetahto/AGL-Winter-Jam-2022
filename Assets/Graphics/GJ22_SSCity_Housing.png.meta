@@ -1,0 +1,430 @@
+fileFormatVersion: 2
+guid: dc7e66058595c9b48a0c828bde26cb8d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GJ22_SSCity_Housing_0
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 75
+        width: 74
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02dc07fc3cf5878498cf82c13fbc9a26
+      internalID: 2137163845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Housing_1
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 75
+        width: 75
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ccc36a50b7169f448fa1e7dbf58ea7a
+      internalID: -1099914293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Housing_2
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 75
+        width: 75
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee0e8d05d35d6845a0b4f5352d2accd
+      internalID: -1871997444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Housing_3
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 75
+        width: 74
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f6e21858ae00be42a5ad47e97ff9086
+      internalID: 160972075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Housing_4
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 75
+        width: 75
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2530fdf363fe5144a7e7e4d8cf879ce
+      internalID: 1040028956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Housing_5
+      rect:
+        serializedVersion: 2
+        x: 1433
+        y: 75
+        width: 76
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 608c154198d4426499558f7153edf92d
+      internalID: -1217295825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Housing_6
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 75
+        width: 73
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff236cc30fa3954ebd4b15f84c8ad3a
+      internalID: -1329306203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Housing_7
+      rect:
+        serializedVersion: 2
+        x: 1866
+        y: 38
+        width: 175
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d7a827ad06f03044836b51311155681
+      internalID: 14747782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Housing_8
+      rect:
+        serializedVersion: 2
+        x: 2121
+        y: 38
+        width: 177
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c08a139a629de9d4bac3157dd7a2218c
+      internalID: 179824120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Housing_9
+      rect:
+        serializedVersion: 2
+        x: 2378
+        y: 38
+        width: 175
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81cd4991abe31094ea24962b39f8a8a5
+      internalID: -1484936905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Housing_10
+      rect:
+        serializedVersion: 2
+        x: 2634
+        y: 38
+        width: 175
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbdbe5a6d55bc154985534216d041d1d
+      internalID: 458264975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Housing_11
+      rect:
+        serializedVersion: 2
+        x: 2889
+        y: 38
+        width: 177
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae947aa663a1199428cc5465f8abdda9
+      internalID: -210970879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Housing_12
+      rect:
+        serializedVersion: 2
+        x: 3147
+        y: 38
+        width: 175
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6cce0c1ebb9034c8dd3448aefc5a05
+      internalID: -2120100517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Housing_13
+      rect:
+        serializedVersion: 2
+        x: 3402
+        y: 38
+        width: 175
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 849a290c7e31d4f47a139e4cd1021977
+      internalID: 1339464649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      GJ22_SSCity_Housing_3: 160972075
+      GJ22_SSCity_Housing_8: 179824120
+      GJ22_SSCity_Housing_2: -1871997444
+      GJ22_SSCity_Housing_5: -1217295825
+      GJ22_SSCity_Housing_10: 458264975
+      GJ22_SSCity_Housing_6: -1329306203
+      GJ22_SSCity_Housing_7: 14747782
+      GJ22_SSCity_Housing_0: 2137163845
+      GJ22_SSCity_Housing_4: 1040028956
+      GJ22_SSCity_Housing_12: -2120100517
+      GJ22_SSCity_Housing_13: 1339464649
+      GJ22_SSCity_Housing_11: -210970879
+      GJ22_SSCity_Housing_9: -1484936905
+      GJ22_SSCity_Housing_1: -1099914293
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

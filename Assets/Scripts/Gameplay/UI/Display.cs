@@ -4,6 +4,6 @@ namespace Game.UI
 {
     public abstract class Display : MonoBehaviour
     {
-        public abstract void ShowText(string text);
+        public abstract void UpdateText(string text);
     }
 }

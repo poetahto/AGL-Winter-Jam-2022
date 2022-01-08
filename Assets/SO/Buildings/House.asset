@@ -15,7 +15,7 @@ MonoBehaviour:
   buildingName:
     value: Single Family
   buildingTime:
-    value: 30
+    value: 2
   unlockThreshold:
     value: 0
   costs:

@@ -17,5 +17,5 @@ MonoBehaviour:
   currentDescription:
     value: How much spending power you have.
   currentValue:
-    value: 100
+    value: 37
   startingValue: 0

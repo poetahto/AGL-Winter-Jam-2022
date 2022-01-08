@@ -55,15 +55,18 @@ namespace Game.Gameplay.Building
         {
             Observable.EveryUpdate()
                 .Where(_ => CanAfford() == false && _remainingTime.Value <= 0)
-                .Subscribe(_ => buildingView.SetStatus(BuildingView.Status.TooExpensive));
+                .Subscribe(_ => buildingView.SetStatus(BuildingView.Status.TooExpensive))
+                .AddTo(this);
             
-            _remainingTime
-                .Where(time => time <= 0 && CanAfford())
-                .Subscribe(_ => buildingView.SetStatus(BuildingView.Status.Available));
+            Observable.EveryUpdate()
+                .Where(_ => _remainingTime.Value <= 0 && CanAfford())
+                .Subscribe(_ => buildingView.SetStatus(BuildingView.Status.Available))
+                .AddTo(this);
 
-            _remainingTime
-                .Where(time => time > 0)
-                .Subscribe(_ => buildingView.SetStatus(BuildingView.Status.InProgress));
+            Observable.EveryUpdate()
+                .Where(_ => _remainingTime.Value > 0)
+                .Subscribe(_ => buildingView.SetStatus(BuildingView.Status.InProgress))
+                .AddTo(this);
         }
 
         private void BindName()

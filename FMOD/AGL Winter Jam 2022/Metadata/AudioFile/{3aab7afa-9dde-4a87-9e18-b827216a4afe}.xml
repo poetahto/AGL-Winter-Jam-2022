@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{3aab7afa-9dde-4a87-9e18-b827216a4afe}">
+		<property name="assetPath">
+			<value>Bossa Nova.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>74.236009070294784</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{516e3702-ed46-4523-a2ba-6112b5bbdc99}</destination>
+		</relationship>
+	</object>
+</objects>

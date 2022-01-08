@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Game.UI
 {
-    public class ResourceController : MonoBehaviour
+    public class ResourceViewController : MonoBehaviour
     {
         [Header("Dependencies")]
         [SerializeField] private ResourceView resourceView;

@@ -18,3 +18,4 @@ MonoBehaviour:
     value: The max amount of people your city can support.
   currentValue:
     value: 1
+  startingValue: 1

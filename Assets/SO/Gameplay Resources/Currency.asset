@@ -18,3 +18,4 @@ MonoBehaviour:
     value: How much spending power you have.
   currentValue:
     value: 0
+  startingValue: 0

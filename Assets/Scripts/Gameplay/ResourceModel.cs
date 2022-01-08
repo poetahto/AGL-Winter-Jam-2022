@@ -10,5 +10,6 @@ namespace Game
         public StringReactiveProperty currentDescription;
         
         public DoubleReactiveProperty currentValue;
+        public double startingValue;
     }
 }

@@ -11,11 +11,13 @@ namespace Game
     {
         public string CurrentScene { get; set; }
         public HashSet<string> Triggers { get; private set; }
+        public Dictionary<string, double> Resources { get; private set; }
         public string Name { get; private set; }
         
         public Save(string saveName)
         {
             Triggers = new HashSet<string>();
+            Resources = new Dictionary<string, double>();
             Name = saveName;
             
             if (IsValid())

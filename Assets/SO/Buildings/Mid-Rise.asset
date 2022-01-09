@@ -15,7 +15,7 @@ MonoBehaviour:
   buildingName:
     value: Mid-Rise Appt.
   buildingTime:
-    value: 150
+    value: 30
   unlockThreshold:
     value: 1000
   finishedPrefab: {fileID: 1325072047406446553, guid: c84eb74c0daea1040ab21c9d1271e013, type: 3}
@@ -34,4 +34,4 @@ MonoBehaviour:
   rewards:
   - resource: {fileID: 11400000, guid: 8742ccfa92c4acc4ba518989ac43befc, type: 2}
     amount:
-      value: 30
+      value: 150

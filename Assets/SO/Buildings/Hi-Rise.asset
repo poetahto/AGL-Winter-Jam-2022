@@ -15,7 +15,7 @@ MonoBehaviour:
   buildingName:
     value: Hi-Rise Appt.
   buildingTime:
-    value: 420
+    value: 60
   unlockThreshold:
     value: 100000
   finishedPrefab: {fileID: 3625085781193368146, guid: 6c08378c1342fc644ad56c9b6840b5c6, type: 3}
@@ -34,4 +34,4 @@ MonoBehaviour:
   rewards:
   - resource: {fileID: 11400000, guid: 8742ccfa92c4acc4ba518989ac43befc, type: 2}
     amount:
-      value: 100
+      value: 1000

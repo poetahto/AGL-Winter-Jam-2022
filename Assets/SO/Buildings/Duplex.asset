@@ -15,7 +15,7 @@ MonoBehaviour:
   buildingName:
     value: Duplex
   buildingTime:
-    value: 90
+    value: 30
   unlockThreshold:
     value: 32
   finishedPrefab: {fileID: 5787735651673093049, guid: 89de31bbd642905499966eb6febcbdba, type: 3}
@@ -34,4 +34,4 @@ MonoBehaviour:
   rewards:
   - resource: {fileID: 11400000, guid: 8742ccfa92c4acc4ba518989ac43befc, type: 2}
     amount:
-      value: 10
+      value: 25

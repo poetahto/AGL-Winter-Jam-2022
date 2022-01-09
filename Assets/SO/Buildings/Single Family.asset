@@ -15,7 +15,7 @@ MonoBehaviour:
   buildingName:
     value: Single Family
   buildingTime:
-    value: 30
+    value: 15
   unlockThreshold:
     value: 0
   finishedPrefab: {fileID: 8297615812187151398, guid: 5ab3b4dc4d089aa4ba8e3fb2ddbb63c6, type: 3}
@@ -34,4 +34,4 @@ MonoBehaviour:
   rewards:
   - resource: {fileID: 11400000, guid: 8742ccfa92c4acc4ba518989ac43befc, type: 2}
     amount:
-      value: 4
+      value: 10

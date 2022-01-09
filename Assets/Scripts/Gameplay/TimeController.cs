@@ -3,6 +3,7 @@ using System.Threading;
 using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Rendering.Universal;
 
 namespace Game.Gameplay
@@ -24,8 +25,8 @@ namespace Game.Gameplay
         [SerializeField] private Light2D cameraLight;
         [SerializeField] private float globalDay;
         [SerializeField] private float globalNight;
-        [SerializeField] private float cameraDay;
-        [SerializeField] private float cameraNight;
+
+        public UnityEvent onNewDay;
 
         private void Awake()
         {
@@ -37,7 +38,6 @@ namespace Game.Gameplay
         {
             globalLight.intensity = Mathf.Lerp(globalDay, globalNight, time);
             globalLight.color = globalGradient.Evaluate(time);
-            // cameraLight.intensity = Mathf.Lerp(cameraDay, cameraNight, time);
             cameraLight.intensity = cameraLightCurve.Evaluate(time);
         }
 

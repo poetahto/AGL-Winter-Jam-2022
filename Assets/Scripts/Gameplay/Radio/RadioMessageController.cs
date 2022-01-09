@@ -12,6 +12,7 @@ namespace Game.Gameplay.Radio
 {
     public class RadioMessageController : MonoBehaviour
     {
+        [SerializeField] private TimeController timeController;
         [SerializeField] private RadioMessageView radioMessageView;
         [SerializeField] private RadioMessageCategory[] categories;
         [SerializeField] private RadioMessageCategory oneOffCategory;
@@ -44,7 +45,9 @@ namespace Game.Gameplay.Radio
 
         private async UniTaskVoid SendMessages(CancellationToken token)
         {
-            await UniTask.Delay(TimeSpan.FromSeconds(messageFrequencySeconds), cancellationToken: token);
+            // await UniTask.Delay(TimeSpan.FromSeconds(messageFrequencySeconds), cancellationToken: token);
+            
+            await timeController.onNewDay.OnInvokeAsync(token);
             
             while (!token.IsCancellationRequested)
                 await ShowNewMessage(token);
@@ -116,7 +119,7 @@ namespace Game.Gameplay.Radio
             return _currentCategory.messages[_currentCategoryIndex++];
         }
         
-        private async UniTask ShowNewMessage(CancellationToken token)
+        public async UniTask ShowNewMessage(CancellationToken token)
         {
             var messageToShow = Random.value > oneOffChance
                 ? GetRandomMessage()
@@ -148,7 +151,8 @@ namespace Game.Gameplay.Radio
             UniTask fadeOut = radioMessageView.canvasGroup.DOFade(0, radioOutroSeconds).WithCancellation(token);
 
             await UniTask.WhenAll(slideOut, fadeOut);
-            await UniTask.Delay(TimeSpan.FromSeconds(messageFrequencySeconds), cancellationToken: token);
+            // await UniTask.Delay(TimeSpan.FromSeconds(messageFrequencySeconds), cancellationToken: token);
+            await timeController.onNewDay.OnInvokeAsync(token);
             
             Debug.Log(messageToShow.message);
         }

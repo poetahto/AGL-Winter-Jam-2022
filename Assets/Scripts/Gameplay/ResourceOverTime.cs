@@ -9,16 +9,18 @@ namespace Game.Gameplay
         public double intervalSeconds;
         public ResourceModel source;
         public ResourceModel destination;
+        public bool autoApply = true;
         
         private void Awake()
         {
-            Observable
-                .Interval(TimeSpan.FromSeconds(intervalSeconds))
-                .Subscribe(_ => ApplyRewards())
-                .AddTo(this);
+            if (autoApply)
+                Observable
+                    .Interval(TimeSpan.FromSeconds(intervalSeconds))
+                    .Subscribe(_ => ApplyRewards())
+                    .AddTo(this);
         }
         
-        private void ApplyRewards()
+        public void ApplyRewards()
         {
             destination.currentValue.Value += source.currentValue.Value;
         }

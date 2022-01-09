@@ -3273,7 +3273,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 66.80534}
+  m_AnchoredPosition: {x: 0, y: -53.19455}
   m_SizeDelta: {x: 375.9888, y: 93.6109}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &799867592
@@ -3510,6 +3510,7 @@ MonoBehaviour:
   intervalSeconds: 1
   source: {fileID: 11400000, guid: 8742ccfa92c4acc4ba518989ac43befc, type: 2}
   destination: {fileID: 11400000, guid: 76c6fc1b21a1b0947a9d12b49cc5666d, type: 2}
+  autoApply: 1
 --- !u!1 &916268278
 GameObject:
   m_ObjectHideFlags: 0
@@ -24102,6 +24103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ce534f7adf44a469fd2776e5c75f542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeController: {fileID: 2102071558}
   radioMessageView: {fileID: 799867592}
   categories:
   - {fileID: 11400000, guid: aced8949ea4dcb144915e27b752fe29b, type: 2}
@@ -25115,7 +25117,7 @@ MonoBehaviour:
   time: 0
   dayDuration: 10
   nightDuration: 10
-  transitionDuration: 30
+  transitionDuration: 60
   globalGradient:
     serializedVersion: 2
     key0: {r: 0.9528302, g: 0.88231367, b: 0.75956744, a: 1}
@@ -25174,8 +25176,9 @@ MonoBehaviour:
   cameraLight: {fileID: 1715229461}
   globalDay: 1
   globalNight: 0
-  cameraDay: 0
-  cameraNight: 0.5
+  onNewDay:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &2102071559
 Transform:
   m_ObjectHideFlags: 0

@@ -1,5 +1,10 @@
 {
   "dependencies": {
+    "com.coffee.ui-effect": "4.0.0-preview.9",
+    "com.cysharp.unitask": "2.2.5",
+    "com.demigiant.dotween": "1.2.632",
+    "com.neuecc.unirx": "7.1.0",
+    "com.unity.cinemachine": "2.8.4",
     "com.unity.collab-proxy": "1.15.4",
     "com.unity.feature.2d": "1.0.0",
     "com.unity.ide.rider": "3.0.9",
@@ -40,16 +45,14 @@
     "com.unity.modules.video": "1.0.0",
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
-    "com.unity.modules.xr": "1.0.0",
-    "com.cysharp.unitask": "2.2.5",
-    "com.demigiant.dotween": "1.2.632",
-    "com.neuecc.unirx": "7.1.0"
+    "com.unity.modules.xr": "1.0.0"
   },
   "scopedRegistries": [
     {
       "name": "package.openupm.com",
       "url": "https://package.openupm.com",
       "scopes": [
+        "com.coffee.ui-effect",
         "com.cysharp.unitask",
         "com.demigiant.dotween",
         "com.neuecc.unirx",

@@ -29,6 +29,7 @@ MonoBehaviour:
     m_Name: package.openupm.com
     m_Url: https://package.openupm.com
     m_Scopes:
+    - com.coffee.ui-effect
     - com.cysharp.unitask
     - com.demigiant.dotween
     - com.neuecc.unirx
@@ -40,6 +41,6 @@ MonoBehaviour:
   m_RegistryInfoDraft:
     m_Modified: 0
     m_ErrorMessage: 
-    m_UserModificationsInstanceId: -832
-    m_OriginalInstanceId: -834
+    m_UserModificationsInstanceId: -824
+    m_OriginalInstanceId: -828
   m_LoadAssets: 0

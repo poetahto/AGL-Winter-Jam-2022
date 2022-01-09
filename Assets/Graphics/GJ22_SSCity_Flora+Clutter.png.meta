@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,6 +69,30 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -78,7 +102,931 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_0
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 142
+        width: 31
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4159b56fc418642b0ef58ee0df27e9
+      internalID: -2107036009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_1
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 151
+        width: 49
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c77b7abf766b1084c8a1c1019e7b228c
+      internalID: 187249838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_2
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 177
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5251b6deafac8fd49a5c97b85c8e956a
+      internalID: 1564755643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_3
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 173
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42645b8d2aeaff04481f28545a3babd6
+      internalID: -1928875369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_4
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 169
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e273404ffa0bef64088643c52e26343f
+      internalID: -147382013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_5
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 153
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 777511fae0dff0b42b9482a24f1c585a
+      internalID: 1751707683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_6
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 175
+        width: 33
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad02460d070fe4f43b710ee808f12c31
+      internalID: -1118650187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_7
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 162
+        width: 71
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc5fbdd6b20cea448ceeeea46beb0c3
+      internalID: -989115050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_8
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 159
+        width: 84
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 588905fc387d23a4aaa6a5014ee1241a
+      internalID: 1334930004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_9
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 146
+        width: 84
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baeb0a62fd44675429bd5f5f789ae434
+      internalID: -2086372675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_10
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 153
+        width: 85
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c223137c2643446876dcca9eee4c48
+      internalID: 1592997758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_11
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 155
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bda1bb3b33eba6478d1927d57d75a72
+      internalID: -1536650787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_12
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 146
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c748ae4d5d26013469987bbe10645790
+      internalID: -373119178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_13
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 150
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a40047e28775144098cd6f0069f9396
+      internalID: 950945986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_14
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 142
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e9e6dc6a0255b4da22fa519d27f35a
+      internalID: 149881896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_15
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 146
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f66f11928573b44a87ff5b9ed39e8eb
+      internalID: 1607956583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_16
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 139
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c31aaa9284b37a469f77e18feb42e11
+      internalID: 589956438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_17
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 145
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fe54f92d21f0e84ba73241cb69e3702
+      internalID: 1381462576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_18
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 38
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58add7de2ee1cf4498b4b5d233c51636
+      internalID: 247321029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_19
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 30
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bba95d460ac7f245a9ad9b44ee0f849
+      internalID: 2007559134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_20
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 27
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49612495ceacba24ca6c59ed9a87acf4
+      internalID: -1748121283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_21
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 46
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9e6823d98b8984478e66f24a236c157
+      internalID: 2134965188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_22
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 22
+        width: 67
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 695f4477cda35e741a3d61c920cd314c
+      internalID: -160368835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_23
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 47
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f4cca27a7ec2d4fbe8ef77e75d6f9c
+      internalID: -540472460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_24
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 49
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be0b8e9eccf81e74a94767a6bb7521ed
+      internalID: -117834622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_25
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 30
+        width: 43
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da523cd4b4654cf4cb82db9b5023e11e
+      internalID: -808742549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_26
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 30
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb30dec26451ee94fac161ea54277c69
+      internalID: 2007938630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_27
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 21
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a50b9d18233264481729bf834110b7
+      internalID: 1699547820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_28
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 41
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb53a38cd03bb3b45a6532c2def5b6c3
+      internalID: 1946325194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_29
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 35
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505135aa32006694cb39e1a54493b7d1
+      internalID: 835210570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_30
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 37
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 343a1d57905df1a4c9f09f1126870531
+      internalID: 144666976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_31
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 25
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71fc882352bc6a94eb4501e72f73c029
+      internalID: 144701466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_32
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 29
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614718d27dcfae840bd4308d80528a31
+      internalID: -1144619319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_33
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 34
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cf5b4a4b75baed41b8a829f37555cb8
+      internalID: -1046284178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_34
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 30
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b9813b9f3fdf2429be7726d7224387
+      internalID: 2002186497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_35
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 25
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd5f5b25ce178543a260f3199759e28
+      internalID: 1055307524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_36
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 25
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f0b15e895e0a944a8b8505800d46742
+      internalID: 40664460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_37
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 19
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca50c722c0a4eb3408887fa33fb0f9dc
+      internalID: -1140017853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_38
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 23
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 091bdd486b59f644e843373ae84492be
+      internalID: -2018132434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_39
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 12
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0efbde4392d80144290babc3fb2388ed
+      internalID: -993085372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_40
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 11
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 438d0d7de5c67d94281b109ec45389d4
+      internalID: -2112041668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_41
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 13
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8059f2f35d4ddb7479d880e96783f5e7
+      internalID: 1460272960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_42
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 11
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c24cabd1751a00448b2e7a921c5a0452
+      internalID: 281824042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Flora+Clutter_43
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 8
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d15eed3344161e44eb9eb46004e03893
+      internalID: -1430068037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -89,7 +1037,51 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GJ22_SSCity_Flora+Clutter_15: 1607956583
+      GJ22_SSCity_Flora+Clutter_27: 1699547820
+      GJ22_SSCity_Flora+Clutter_35: 1055307524
+      GJ22_SSCity_Flora+Clutter_19: 2007559134
+      GJ22_SSCity_Flora+Clutter_29: 835210570
+      GJ22_SSCity_Flora+Clutter_2: 1564755643
+      GJ22_SSCity_Flora+Clutter_26: 2007938630
+      GJ22_SSCity_Flora+Clutter_12: -373119178
+      GJ22_SSCity_Flora+Clutter_11: -1536650787
+      GJ22_SSCity_Flora+Clutter_42: 281824042
+      GJ22_SSCity_Flora+Clutter_33: -1046284178
+      GJ22_SSCity_Flora+Clutter_9: -2086372675
+      GJ22_SSCity_Flora+Clutter_40: -2112041668
+      GJ22_SSCity_Flora+Clutter_18: 247321029
+      GJ22_SSCity_Flora+Clutter_13: 950945986
+      GJ22_SSCity_Flora+Clutter_17: 1381462576
+      GJ22_SSCity_Flora+Clutter_34: 2002186497
+      GJ22_SSCity_Flora+Clutter_24: -117834622
+      GJ22_SSCity_Flora+Clutter_38: -2018132434
+      GJ22_SSCity_Flora+Clutter_43: -1430068037
+      GJ22_SSCity_Flora+Clutter_21: 2134965188
+      GJ22_SSCity_Flora+Clutter_30: 144666976
+      GJ22_SSCity_Flora+Clutter_14: 149881896
+      GJ22_SSCity_Flora+Clutter_7: -989115050
+      GJ22_SSCity_Flora+Clutter_6: -1118650187
+      GJ22_SSCity_Flora+Clutter_39: -993085372
+      GJ22_SSCity_Flora+Clutter_16: 589956438
+      GJ22_SSCity_Flora+Clutter_28: 1946325194
+      GJ22_SSCity_Flora+Clutter_3: -1928875369
+      GJ22_SSCity_Flora+Clutter_25: -808742549
+      GJ22_SSCity_Flora+Clutter_5: 1751707683
+      GJ22_SSCity_Flora+Clutter_37: -1140017853
+      GJ22_SSCity_Flora+Clutter_22: -160368835
+      GJ22_SSCity_Flora+Clutter_8: 1334930004
+      GJ22_SSCity_Flora+Clutter_32: -1144619319
+      GJ22_SSCity_Flora+Clutter_41: 1460272960
+      GJ22_SSCity_Flora+Clutter_0: -2107036009
+      GJ22_SSCity_Flora+Clutter_36: 40664460
+      GJ22_SSCity_Flora+Clutter_23: -540472460
+      GJ22_SSCity_Flora+Clutter_4: -147382013
+      GJ22_SSCity_Flora+Clutter_20: -1748121283
+      GJ22_SSCity_Flora+Clutter_1: 187249838
+      GJ22_SSCity_Flora+Clutter_10: 1592997758
+      GJ22_SSCity_Flora+Clutter_31: 144701466
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{a71f15d5-37b7-4a25-a1bd-9172adc73b00}">
+		<property name="assetPath">
+			<value>Built_Farm.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.64442176870748302</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{516e3702-ed46-4523-a2ba-6112b5bbdc99}</destination>
+		</relationship>
+	</object>
+</objects>

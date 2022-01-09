@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using UniRx;
+using System.Threading;
+using Cysharp.Threading.Tasks;
+using DG.Tweening;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -13,7 +15,10 @@ namespace Game.Gameplay.Radio
         [SerializeField] private RadioMessageCategory oneOffCategory;
 
         [SerializeField] private float messageFrequencySeconds = 10f;
+        [SerializeField] private float messageAutoClearSeconds = 10f;
         [SerializeField] private float oneOffChance = 0.5f;
+        [SerializeField] private float radioFadeInSeconds = 1f;
+        [SerializeField] private float radioFadeOutSeconds = 1f;
 
         private List<RadioMessageModel> _oneOffMessages;
         private HashSet<RadioMessageCategory> _categories;
@@ -28,10 +33,14 @@ namespace Game.Gameplay.Radio
             
             _currentCategory = GetRandomCategory();
             _currentCategoryIndex = 0;
-            
-            Observable
-                .Interval(TimeSpan.FromSeconds(messageFrequencySeconds))
-                .Subscribe(_ => ShowNewMessage());
+
+            SendMessages(gameObject.GetCancellationTokenOnDestroy()).Forget();
+        }
+
+        private async UniTaskVoid SendMessages(CancellationToken token)
+        {
+            while (!token.IsCancellationRequested)
+                await ShowNewMessage(token);
         }
 
         private void InitializeMessageDictionary()
@@ -44,8 +53,6 @@ namespace Game.Gameplay.Radio
 
         private RadioMessageCategory GetRandomCategory()
         {
-            // todo: gracefully handle category failure - e.g. by repopulating the set
-
             if (_categories.Count <= 0)
             {
                 Debug.Log("No random categories available! Reshuffling...");
@@ -102,12 +109,28 @@ namespace Game.Gameplay.Radio
             return _currentCategory.messages[_currentCategoryIndex++];
         }
         
-        private void ShowNewMessage()
+        private async UniTask ShowNewMessage(CancellationToken token)
         {
             var messageToShow = Random.value > oneOffChance
                 ? GetRandomMessage()
                 : GetCurrentMessage();
 
+            radioMessageView.textDisplay.UpdateText(messageToShow.message);
+
+            radioMessageView.canvasGroup.interactable = true;
+            radioMessageView.canvasGroup.blocksRaycasts = true;
+            await radioMessageView.canvasGroup.DOFade(1, radioFadeInSeconds).WithCancellation(token);
+            
+            UniTask userInput = radioMessageView.clearButton.OnClickAsync(token);
+            UniTask autoClear = UniTask.Delay(TimeSpan.FromSeconds(messageAutoClearSeconds), cancellationToken: token);
+            await UniTask.WhenAny(userInput, autoClear);
+
+            radioMessageView.canvasGroup.interactable = false;
+            radioMessageView.canvasGroup.blocksRaycasts = false;
+            await radioMessageView.canvasGroup.DOFade(0, radioFadeOutSeconds).WithCancellation(token);
+            
+            await UniTask.Delay(TimeSpan.FromSeconds(messageFrequencySeconds), cancellationToken: token);
+            
             Debug.Log(messageToShow.message);
         }
     }

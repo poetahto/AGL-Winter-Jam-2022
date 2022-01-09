@@ -15,3 +15,10 @@ MonoBehaviour:
   message: Bevrolet enters into the world of luxury vehicles by releasing the "Shorevette",
     a supercar capable of floating on water. It lacks, however. the ability to propel
     itself on water.
+  audioCue:
+    Guid:
+      Data1: -406899777
+      Data2: 1086967943
+      Data3: -586295898
+      Data4: -63151069
+    Path: event:/News Tick General

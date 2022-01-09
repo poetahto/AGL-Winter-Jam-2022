@@ -13,3 +13,10 @@ MonoBehaviour:
   m_Name: 06_fo
   m_EditorClassIdentifier: 
   message: N&N's releases new Flamin' Hot Spleentos
+  audioCue:
+    Guid:
+      Data1: -406899777
+      Data2: 1086967943
+      Data3: -586295898
+      Data4: -63151069
+    Path: event:/News Tick General

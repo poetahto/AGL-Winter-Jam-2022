@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using System.Text;
 using Cysharp.Threading.Tasks;
+using FMODUnity;
 using Game.UI;
 using UniRx;
 using UnityEngine;
@@ -20,6 +21,7 @@ namespace Game.Gameplay.Building
         [SerializeField] private ValueFormatter timeFormatter;
 
         [SerializeField] private Transform playerTransform;
+        [SerializeField] private EventReference purchaseSound;
         
         private void Start()
         {
@@ -134,6 +136,8 @@ namespace Game.Gameplay.Building
             foreach (ResourceChange cost in buildingModel.costs)
                 cost.Apply();
 
+            RuntimeManager.PlayOneShot(purchaseSound);
+            
             _remainingTime.Value = buildingModel.buildingTime.Value;
             GameObject constructionPrefab = Instantiate(buildingModel.constructionPrefab, playerTransform.position, Quaternion.identity);
             
@@ -147,6 +151,7 @@ namespace Game.Gameplay.Building
                 reward.Apply();
             
             Instantiate(buildingModel.finishedPrefab, constructionPrefab.transform.position, Quaternion.identity);
+            RuntimeManager.PlayOneShot(buildingModel.completionSound);
             Destroy(constructionPrefab);
         }
     }

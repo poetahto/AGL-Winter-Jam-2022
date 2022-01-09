@@ -15,3 +15,10 @@ MonoBehaviour:
   message: 'Day 3: I''m still not sure that anyone reads the tickers. This will be
     my final call for help. The walls are closing in and I''m beginning to see the
     light. Please help me merciful god.'
+  audioCue:
+    Guid:
+      Data1: -406899777
+      Data2: 1086967943
+      Data3: -586295898
+      Data4: -63151069
+    Path: event:/News Tick General

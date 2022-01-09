@@ -13,3 +13,10 @@ MonoBehaviour:
   m_Name: 02_oo
   m_EditorClassIdentifier: 
   message: Cap'n Munch is a cereal based government psyop
+  audioCue:
+    Guid:
+      Data1: -406899777
+      Data2: 1086967943
+      Data3: -586295898
+      Data4: -63151069
+    Path: event:/News Tick General

@@ -15,3 +15,10 @@ MonoBehaviour:
   message: Fjord Rotor Company Announces New Commuter Plane. "Looks like a car, drives
     like a car, but it's not a car!" slogan reads. Reviewers universally pan the
     'Ostrich.'
+  audioCue:
+    Guid:
+      Data1: -406899777
+      Data2: 1086967943
+      Data3: -586295898
+      Data4: -63151069
+    Path: event:/News Tick General

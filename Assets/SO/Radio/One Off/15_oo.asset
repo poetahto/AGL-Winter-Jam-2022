@@ -13,3 +13,10 @@ MonoBehaviour:
   m_Name: 15_oo
   m_EditorClassIdentifier: 
   message: Video Streaming Service MeTV Under Fire For Questionable Business Practices
+  audioCue:
+    Guid:
+      Data1: -406899777
+      Data2: 1086967943
+      Data3: -586295898
+      Data4: -63151069
+    Path: event:/News Tick General

@@ -5,6 +5,7 @@ using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using DG.Tweening.Core;
 using DG.Tweening.Plugins.Options;
+using FMODUnity;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -134,6 +135,8 @@ namespace Game.Gameplay.Radio
             Vector2 curPos = radioMessageView.rectTransform.anchoredPosition;
             curPos.y = radioSpawnY;
             radioMessageView.rectTransform.anchoredPosition = curPos;
+            
+            RuntimeManager.PlayOneShot(messageToShow.audioCue);
             
             TweenerCore<Vector2, Vector2, VectorOptions> introAnimation = radioMessageView.rectTransform
                 .DOAnchorPosY(radioDisplayedY, radioIntroSeconds)

@@ -13,3 +13,10 @@ MonoBehaviour:
   m_Name: 01_g
   m_EditorClassIdentifier: 
   message: 'Video game company, Friendly Dog, launches "The First of Us 2: The Squeakquel"'
+  audioCue:
+    Guid:
+      Data1: -406899777
+      Data2: 1086967943
+      Data3: -586295898
+      Data4: -63151069
+    Path: event:/News Tick General

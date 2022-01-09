@@ -20,6 +20,13 @@ MonoBehaviour:
     value: 8
   finishedPrefab: {fileID: 6311694771742546364, guid: fd239f2ce03567f4f9d4dbabac9364b4, type: 3}
   constructionPrefab: {fileID: 3235427042388473962, guid: 07fd2c544cf56244b80fbc95ccb2b3d7, type: 3}
+  completionSound:
+    Guid:
+      Data1: 445089983
+      Data2: 1116852586
+      Data3: 182144408
+      Data4: 160221847
+    Path: event:/Build Farm
   costs:
   - resource: {fileID: 11400000, guid: 76c6fc1b21a1b0947a9d12b49cc5666d, type: 2}
     amount:

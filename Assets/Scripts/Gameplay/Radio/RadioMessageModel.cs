@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using FMODUnity;
+using UnityEngine;
 
 namespace Game.Gameplay.Radio
 {
@@ -6,5 +7,6 @@ namespace Game.Gameplay.Radio
     public class RadioMessageModel : ScriptableObject
     {
         public string message;
+        public EventReference audioCue;
     }
 }

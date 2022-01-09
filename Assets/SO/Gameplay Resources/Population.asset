@@ -17,5 +17,5 @@ MonoBehaviour:
   currentDescription:
     value: The amount of people currently living in your city.
   currentValue:
-    value: 1000004
-  startingValue: 1
+    value: 0
+  startingValue: 0

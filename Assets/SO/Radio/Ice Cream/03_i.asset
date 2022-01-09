@@ -14,3 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   message: Jen and Barry remove "Mystery Jellybean" ice cream flavor from shelves
     in response to outrage.
+  audioCue:
+    Guid:
+      Data1: 2041143508
+      Data2: 1278953204
+      Data3: 278838199
+      Data4: -331999075
+    Path: event:/News Tick Ice Cream

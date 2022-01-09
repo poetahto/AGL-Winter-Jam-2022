@@ -14,3 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   message: Local Man bumbles "me me when your girl you you when your girl when your
     girl see when your girl sees me when when like," post Funi Budr brand snack.
+  audioCue:
+    Guid:
+      Data1: -406899777
+      Data2: 1086967943
+      Data3: -586295898
+      Data4: -63151069
+    Path: event:/News Tick General

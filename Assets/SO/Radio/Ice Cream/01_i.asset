@@ -15,3 +15,10 @@ MonoBehaviour:
   message: Tall Cart megastore employees on strike following mass "Jen and Barry's
     Mystery Jellybean" ice cream flavor refund debacle. Picket signs read "NO CREAM
     FLAVOR; NO GREEN SAVER!"
+  audioCue:
+    Guid:
+      Data1: 2041143508
+      Data2: 1278953204
+      Data3: 278838199
+      Data4: -331999075
+    Path: event:/News Tick Ice Cream

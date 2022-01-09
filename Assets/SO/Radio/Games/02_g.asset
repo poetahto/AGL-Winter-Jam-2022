@@ -14,3 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   message: New Battle Royal hits Beam and breaks records for amount of concurrent
     "Your Mom" messages sent.
+  audioCue:
+    Guid:
+      Data1: -406899777
+      Data2: 1086967943
+      Data3: -586295898
+      Data4: -63151069
+    Path: event:/News Tick General

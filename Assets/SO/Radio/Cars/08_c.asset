@@ -15,3 +15,10 @@ MonoBehaviour:
   message: Super car manufacturer, Karrari, relieves mystery behind long awaited
     "Karrari Kar", elaborating that it will exclusively come in red, and any attempts
     to modify it will be taken to court.
+  audioCue:
+    Guid:
+      Data1: -406899777
+      Data2: 1086967943
+      Data3: -586295898
+      Data4: -63151069
+    Path: event:/News Tick General

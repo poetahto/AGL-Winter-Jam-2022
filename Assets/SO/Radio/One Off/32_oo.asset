@@ -13,3 +13,10 @@ MonoBehaviour:
   m_Name: 32_oo
   m_EditorClassIdentifier: 
   message: Oil Magnate crushed by 50 Gallon Drum. No word on what it contained.
+  audioCue:
+    Guid:
+      Data1: -406899777
+      Data2: 1086967943
+      Data3: -586295898
+      Data4: -63151069
+    Path: event:/News Tick General

@@ -14,3 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   message: Possibility of Fairies Existing Revealed. Local Elementary School Teacher
     Goes Insane.
+  audioCue:
+    Guid:
+      Data1: -406899777
+      Data2: 1086967943
+      Data3: -586295898
+      Data4: -63151069
+    Path: event:/News Tick General

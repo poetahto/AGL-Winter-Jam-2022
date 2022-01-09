@@ -20,6 +20,13 @@ MonoBehaviour:
     value: 32
   finishedPrefab: {fileID: 5787735651673093049, guid: 89de31bbd642905499966eb6febcbdba, type: 3}
   constructionPrefab: {fileID: 3235427042388473962, guid: 07fd2c544cf56244b80fbc95ccb2b3d7, type: 3}
+  completionSound:
+    Guid:
+      Data1: 1870133613
+      Data2: 1088737924
+      Data3: 96534158
+      Data4: -914468155
+    Path: event:/Build House
   costs:
   - resource: {fileID: 11400000, guid: 76c6fc1b21a1b0947a9d12b49cc5666d, type: 2}
     amount:

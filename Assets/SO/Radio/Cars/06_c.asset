@@ -15,3 +15,10 @@ MonoBehaviour:
   message: Automobile manufacturer, Sushibishi, tumbles into the frey, releasing
     the "Sushibishi Rock". "Yep, that's a rock," marketing analyst Car Driverson
     reveals to the public.
+  audioCue:
+    Guid:
+      Data1: -406899777
+      Data2: 1086967943
+      Data3: -586295898
+      Data4: -63151069
+    Path: event:/News Tick General

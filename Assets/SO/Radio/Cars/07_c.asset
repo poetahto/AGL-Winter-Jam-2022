@@ -15,3 +15,10 @@ MonoBehaviour:
   message: Not to be outdone, Fjord Rotor Company plows through the market with the
     all new "Road Runner" turbine powered kick scooter. Consumers terrified, but
     content, with the product.
+  audioCue:
+    Guid:
+      Data1: -406899777
+      Data2: 1086967943
+      Data3: -586295898
+      Data4: -63151069
+    Path: event:/News Tick General

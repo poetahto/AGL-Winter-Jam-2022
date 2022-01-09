@@ -17,5 +17,5 @@ MonoBehaviour:
   currentDescription:
     value: How much you earn from each click.
   currentValue:
-    value: 5
+    value: 1
   startingValue: 1

@@ -1,4 +1,5 @@
-﻿using UniRx;
+﻿using FMODUnity;
+using UniRx;
 using UnityEngine;
 
 namespace Game.Gameplay.Building
@@ -12,6 +13,7 @@ namespace Game.Gameplay.Building
 
         public GameObject finishedPrefab;
         public GameObject constructionPrefab;
+        public EventReference completionSound;
         
         public ResourceChange[] costs;
         public ResourceChange[] rewards;

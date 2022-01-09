@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0c1040c244e4be2954028566dc28e18, type: 3}
-  m_Name: House
+  m_Name: Solar
   m_EditorClassIdentifier: 
   buildingName:
-    value: Single Family
+    value: Solar
   buildingTime:
-    value: 30
+    value: 120
   unlockThreshold:
-    value: 0
+    value: 15000
   costs:
   - resource: {fileID: 11400000, guid: 76c6fc1b21a1b0947a9d12b49cc5666d, type: 2}
     amount:
-      value: -100
+      value: -750
   rewards:
-  - resource: {fileID: 11400000, guid: 019a8ca93e79af749bd0405b48a9a280, type: 2}
+  - resource: {fileID: 11400000, guid: c6e664bf99eae5942ab7c36522b27f79, type: 2}
     amount:
-      value: 4
+      value: 1.5

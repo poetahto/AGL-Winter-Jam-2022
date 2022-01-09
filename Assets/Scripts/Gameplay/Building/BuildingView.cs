@@ -14,6 +14,7 @@ namespace Game.Gameplay.Building
             InProgress
         }
         
+        [SerializeField] private GameObject lockedObject;
         [SerializeField] private GameObject tooExpensiveObject;
         [SerializeField] private GameObject availableObject;
         [SerializeField] private GameObject inProgressObject;
@@ -32,9 +33,22 @@ namespace Game.Gameplay.Building
         public bool HasCost => costDisplay != null;
         public bool HasTime => timeDisplay != null;
         public bool HasReward => rewardDisplay != null;
-
+        public bool Locked { get; set; }
+        
+        
         public void SetStatus(Status status)
         {
+            if (Locked)
+            {
+                lockedObject.SetActive(true);
+                availableObject.SetActive(false);
+                inProgressObject.SetActive(false);
+                tooExpensiveObject.SetActive(false);
+                return;
+            }
+
+            lockedObject.SetActive(false);
+
             switch (status)
             {
                 case Status.TooExpensive:

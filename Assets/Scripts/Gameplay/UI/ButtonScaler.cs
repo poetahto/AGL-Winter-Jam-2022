@@ -11,11 +11,11 @@ namespace Game.UI
         
         [SerializeField] private RectTransform hoverTransform;
         [SerializeField] private float hoverTime = 0.1f;
-        [SerializeField] private float hoverScale = 1.1f;
+        [SerializeField] private float hoverScale = 1.05f;
 
         [SerializeField] private RectTransform pressTransform;
         [SerializeField] private float pressTime = 0.1f;
-        [SerializeField] private float pressScale = 0.9f;
+        [SerializeField] private float pressScale = 0.95f;
 
         private void Start()
         {

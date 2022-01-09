@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0c1040c244e4be2954028566dc28e18, type: 3}
+  m_Name: Mid-Rise
+  m_EditorClassIdentifier: 
+  buildingName:
+    value: Mid-Rise Appt.
+  buildingTime:
+    value: 150
+  unlockThreshold:
+    value: 1000
+  costs:
+  - resource: {fileID: 11400000, guid: 76c6fc1b21a1b0947a9d12b49cc5666d, type: 2}
+    amount:
+      value: -300
+  rewards:
+  - resource: {fileID: 11400000, guid: 8742ccfa92c4acc4ba518989ac43befc, type: 2}
+    amount:
+      value: 30

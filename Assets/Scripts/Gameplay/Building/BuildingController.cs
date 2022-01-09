@@ -12,7 +12,8 @@ namespace Game.Gameplay.Building
         [Header("Dependencies")]
         [SerializeField] private BuildingView buildingView;
         [SerializeField] private BuildingModel buildingModel;
-
+        [SerializeField] private ResourceModel unlockResource;
+        
         [Header("Optional")] 
         [SerializeField] private ValueFormatter costFormatter;
         [SerializeField] private ValueFormatter rewardFormatter;
@@ -20,6 +21,10 @@ namespace Game.Gameplay.Building
         
         private void Start()
         {
+            unlockResource.currentValue
+                .Select(value => value >= buildingModel.unlockThreshold.Value)
+                .Subscribe(isUnlocked => buildingView.Locked = !isUnlocked);
+            
             BindObjectChanges();
             
             if (buildingView.HasBuildingButton)

@@ -49,6 +49,7 @@ namespace Game.Gameplay
                 await DOTween.To(value => time = value, 0, 1, transitionDuration).WithCancellation(token);
                 await UniTask.Delay(TimeSpan.FromSeconds(nightDuration), cancellationToken: token);
                 await DOTween.To(value => time = value, 1, 0, transitionDuration).WithCancellation(token);
+                onNewDay.Invoke();
             }
         }
     }

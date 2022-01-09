@@ -496,7 +496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 089d7483414c4d4dac3b73a875f2d391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  introDurationSeconds: 0.2
+  introDurationSeconds: 0.5
   outroDurationSeconds: 0.5
   loadingCanvas: {fileID: 2045231082}
 --- !u!114 &2045231084
@@ -512,7 +512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.18867922, g: 0.18867922, b: 0.18867922, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

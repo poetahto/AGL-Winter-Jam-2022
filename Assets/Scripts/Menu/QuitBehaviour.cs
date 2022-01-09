@@ -6,7 +6,7 @@ namespace Game
     {
         private LoadingScreen _loadingScreen;
 
-        private void Awake()
+        private void Start()
         {
             _loadingScreen = FindObjectOfType<LoadingScreen>();
         }

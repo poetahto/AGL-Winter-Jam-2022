@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using UniRx;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -15,14 +14,17 @@ namespace Game.Gameplay.Radio
 
         [SerializeField] private float messageFrequencySeconds = 10f;
         [SerializeField] private float oneOffChance = 0.5f;
-        
-        private SortedSet<RadioMessageCategory> _categories;
+
+        private List<RadioMessageModel> _oneOffMessages;
+        private HashSet<RadioMessageCategory> _categories;
         private RadioMessageCategory _currentCategory;
         private int _currentCategoryIndex;
 
         private void Start()
         {
             InitializeMessageDictionary();
+
+            _oneOffMessages = new List<RadioMessageModel>(oneOffCategory.messages);
             
             _currentCategory = GetRandomCategory();
             _currentCategoryIndex = 0;
@@ -34,7 +36,7 @@ namespace Game.Gameplay.Radio
 
         private void InitializeMessageDictionary()
         {
-            _categories = new SortedSet<RadioMessageCategory>();
+            _categories = new HashSet<RadioMessageCategory>();
 
             foreach (var messageCategory in categories)
                 _categories.Add(messageCategory);
@@ -42,14 +44,15 @@ namespace Game.Gameplay.Radio
 
         private RadioMessageCategory GetRandomCategory()
         {
-            int totalCategories = _categories.Count;
-
             // todo: gracefully handle category failure - e.g. by repopulating the set
-            
-            if (totalCategories <= 0)
-                throw new Exception("No random categories available!");
 
-            int randomIndex = Random.Range(0, totalCategories - 1);
+            if (_categories.Count <= 0)
+            {
+                Debug.Log("No random categories available! Reshuffling...");
+                InitializeMessageDictionary();
+            }
+
+            int randomIndex = Random.Range(0,  _categories.Count - 1);
             int currentIndex = 0;
 
             foreach (var messageCategory in _categories)
@@ -63,34 +66,46 @@ namespace Game.Gameplay.Radio
             return null;
         }
 
-        private RadioMessageModel GetRandomMessage(RadioMessageCategory category)
+        private RadioMessageModel GetRandomMessage()
         {
-            if (!_categories.Contains(category) || category.messages.Length <= 0)
-                throw new Exception("No random messages available!");
+            Debug.Log("Showing one-off message.");
+
+            if (_oneOffMessages.Count <= 0)
+            {
+                Debug.Log("Ran out of one shots! Refreshing...");
+                _oneOffMessages = new List<RadioMessageModel>(oneOffCategory.messages);
+            }
             
-            int totalMessages = category.messages.Length;
+            int totalMessages = _oneOffMessages.Count;
             int randomIndex = Random.Range(0, totalMessages - 1);
 
-            return category.messages[randomIndex];
+            var message = _oneOffMessages[randomIndex];
+            _oneOffMessages.Remove(message);
+            
+            return message;
         }
 
         private RadioMessageModel GetCurrentMessage()
         {
+            Debug.Log("Showing story message.");
+            
             if (_currentCategoryIndex >=_currentCategory.messages.Length)
             {
+                Debug.Log($"Ran out of messages in {_currentCategory}.");
                 _categories.Remove(_currentCategory);
                 
                 _currentCategoryIndex = 0;
                 _currentCategory = GetRandomCategory();
+                Debug.Log($"Started new category: {_currentCategory}");
             }
 
-            return _currentCategory.messages[_currentCategoryIndex];
+            return _currentCategory.messages[_currentCategoryIndex++];
         }
         
         private void ShowNewMessage()
         {
             var messageToShow = Random.value > oneOffChance
-                ? GetRandomMessage(oneOffCategory)
+                ? GetRandomMessage()
                 : GetCurrentMessage();
 
             Debug.Log(messageToShow.message);

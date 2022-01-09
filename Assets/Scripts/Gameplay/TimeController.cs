@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
 namespace Game.Gameplay
@@ -8,6 +7,7 @@ namespace Game.Gameplay
     {
         [Range(0, 1)] 
         [SerializeField] private float time;
+        [SerializeField] private Gradient globalGradient;
 
         [Header("Dependencies")] 
         [SerializeField] private Light2D globalLight;
@@ -19,7 +19,9 @@ namespace Game.Gameplay
 
         private void Update()
         {
-            // globalLight.intensity = 
+            globalLight.intensity = Mathf.Lerp(globalDay, globalNight, time);
+            globalLight.color = globalGradient.Evaluate(time);
+            cameraLight.intensity = Mathf.Lerp(cameraDay, cameraNight, time);
         }
     }
 }

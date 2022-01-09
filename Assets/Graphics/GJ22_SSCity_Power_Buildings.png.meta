@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -76,9 +76,306 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: GJ22_SSCity_Power_Buildings_0
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 861
+        width: 79
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63150661fdc11d844a8504ec509fe4c7
+      internalID: -651001680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Power_Buildings_1
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 861
+        width: 69
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05442b86505634c4d8f3a0627d9c29b9
+      internalID: -1294194501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Power_Buildings_2
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 861
+        width: 73
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d96569f3757fd47a14b95c59e9136b
+      internalID: -1945960000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Power_Buildings_3
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 533
+        width: 193
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e06e9b41bd3b4ae46adc26cb6880e2cc
+      internalID: -694576155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Power_Buildings_4
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 533
+        width: 199
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7063e699bdf5c5a4a8926ddbb5e75066
+      internalID: -194408871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Power_Buildings_5
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 710
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba1fc67611c3e9d45b78fa86a17e035a
+      internalID: -1636166675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Power_Buildings_6
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 711
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 007adce3aad7a624f9e20e90a8af1a93
+      internalID: -1430296813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Power_Buildings_7
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 533
+        width: 197
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88cfacb5bcf817c4498a4bb4be94a55a
+      internalID: -248475684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Power_Buildings_8
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 699
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e75f0bd797ebada488bf77845a86550a
+      internalID: -1120842246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Power_Buildings_9
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 261
+        width: 237
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a91ce3db086d543a8a0122a1dea435
+      internalID: -863115117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Power_Buildings_10
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 261
+        width: 237
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b89ec498bd598f47b31a603d33d185d
+      internalID: 1657818148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Power_Buildings_11
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 261
+        width: 237
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 117f21125a47f464da40fcf124dcf405
+      internalID: 1932450419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Power_Buildings_12
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 70
+        width: 105
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e69c9656c274c794ab4c9e5540ee5f16
+      internalID: 1023462444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -89,7 +386,20 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GJ22_SSCity_Power_Buildings_0: -651001680
+      GJ22_SSCity_Power_Buildings_1: -1294194501
+      GJ22_SSCity_Power_Buildings_7: -248475684
+      GJ22_SSCity_Power_Buildings_11: 1932450419
+      GJ22_SSCity_Power_Buildings_3: -694576155
+      GJ22_SSCity_Power_Buildings_9: -863115117
+      GJ22_SSCity_Power_Buildings_10: 1657818148
+      GJ22_SSCity_Power_Buildings_2: -1945960000
+      GJ22_SSCity_Power_Buildings_4: -194408871
+      GJ22_SSCity_Power_Buildings_6: -1430296813
+      GJ22_SSCity_Power_Buildings_5: -1636166675
+      GJ22_SSCity_Power_Buildings_12: 1023462444
+      GJ22_SSCity_Power_Buildings_8: -1120842246
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

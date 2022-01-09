@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 909b7569a70a4ff48d6e9a9d04fdc694, type: 3}
   m_Name: 06_c
   m_EditorClassIdentifier: 
-  message: 
+  message: Automobile manufacturer, Sushibishi, tumbles into the frey, releasing
+    the "Sushibishi Rock". "Yep, that's a rock," marketing analyst Car Driverson
+    reveals to the public.

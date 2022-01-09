@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 909b7569a70a4ff48d6e9a9d04fdc694, type: 3}
   m_Name: 10_c
   m_EditorClassIdentifier: 
-  message: 
+  message: Bevrolet enters into the world of luxury vehicles by releasing the "Shorevette",
+    a supercar capable of floating on water. It lacks, however. the ability to propel
+    itself on water.

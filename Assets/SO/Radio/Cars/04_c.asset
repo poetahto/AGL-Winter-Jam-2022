@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 909b7569a70a4ff48d6e9a9d04fdc694, type: 3}
   m_Name: 04_c
   m_EditorClassIdentifier: 
-  message: 
+  message: 'Just announced, Fjord Rotor Company unveils new flying car concept named
+    the "Chicken". "As they say: If it walks like a duck..." exclaims CEO.'

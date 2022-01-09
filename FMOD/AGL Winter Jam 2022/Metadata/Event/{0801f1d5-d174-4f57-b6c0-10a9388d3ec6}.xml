@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{0801f1d5-d174-4f57-b6c0-10a9388d3ec6}">
 		<property name="name">
-			<value>Fonk</value>
+			<value>Credits Theme</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
@@ -67,6 +67,9 @@
 		<relationship name="modules">
 			<destination>{1fa75b62-bb62-41a6-a480-43017ce4ff71}</destination>
 		</relationship>
+		<relationship name="markers">
+			<destination>{813091e4-539c-4d5c-a701-8fab0c1616d5}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{b7429d70-8eb1-48cf-ac6d-2faa4ff3fd20}">
 		<relationship name="effectChain">
@@ -107,6 +110,20 @@
 			<destination>{b7429d70-8eb1-48cf-ac6d-2faa4ff3fd20}</destination>
 		</relationship>
 	</object>
+	<object class="TempoMarker" id="{813091e4-539c-4d5c-a701-8fab0c1616d5}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="tempo">
+			<value>107</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{b4afb65a-e7b9-4747-abc1-69be0c07eda1}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{42493c3f-fc2b-43b6-b7c2-c2827db1cc4d}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{10c87538-e64d-4a67-9ea4-d04e0e330d5b}">
 		<relationship name="effects">
 			<destination>{b4b0f0e1-93d6-4371-9bed-2093be3ef8eb}</destination>
@@ -117,9 +134,36 @@
 	<object class="MixerBusEffectChain" id="{71c4d959-5ccf-4c11-bc4c-eb6473b2ff57}">
 		<relationship name="effects">
 			<destination>{5c49ebb9-a71c-4d84-8b4a-bccb15282e1c}</destination>
+			<destination>{50720dc2-de94-4982-9e2c-d7e070d52da3}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{bc09ebab-1eba-45fb-85c6-d19701f8ed99}" />
 	<object class="MixerBusFader" id="{b4b0f0e1-93d6-4371-9bed-2093be3ef8eb}" />
 	<object class="MixerBusFader" id="{5c49ebb9-a71c-4d84-8b4a-bccb15282e1c}" />
+	<object class="SFXReverbEffect" id="{50720dc2-de94-4982-9e2c-d7e070d52da3}">
+		<property name="decayTime">
+			<value>4100</value>
+		</property>
+		<property name="earlyDelay">
+			<value>0</value>
+		</property>
+		<property name="HFDecayRatio">
+			<value>58</value>
+		</property>
+		<property name="density">
+			<value>83.5</value>
+		</property>
+		<property name="lowShelfGain">
+			<value>-31.5</value>
+		</property>
+		<property name="earlyLateMix">
+			<value>100</value>
+		</property>
+		<property name="wetLevel">
+			<value>-11</value>
+		</property>
+		<property name="dryLevel">
+			<value>-2</value>
+		</property>
+	</object>
 </objects>

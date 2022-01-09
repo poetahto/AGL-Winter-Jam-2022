@@ -15,7 +15,7 @@ MonoBehaviour:
   buildingName:
     value: Space Program
   buildingTime:
-    value: 900
+    value: 60
   unlockThreshold:
     value: 1000000
   finishedPrefab: {fileID: 4063679911081652950, guid: 7105f8fe81966c4478953f5e6a0961bd, type: 3}
@@ -30,7 +30,7 @@ MonoBehaviour:
   costs:
   - resource: {fileID: 11400000, guid: 76c6fc1b21a1b0947a9d12b49cc5666d, type: 2}
     amount:
-      value: -1000000000
+      value: -1000000
   rewards:
   - resource: {fileID: 11400000, guid: c6e664bf99eae5942ab7c36522b27f79, type: 2}
     amount:

@@ -584,8 +584,14 @@
 		<property name="length">
 			<value>40.851063829787236</value>
 		</property>
+		<property name="quantizationInterval">
+			<value>8</value>
+		</property>
 		<property name="name">
 			<value>Level 1</value>
+		</property>
+		<property name="looping">
+			<value>2</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{8a35b21a-1758-482a-a925-b5223741ae0e}</destination>
@@ -604,8 +610,14 @@
 		<property name="length">
 			<value>40.851063829787236</value>
 		</property>
+		<property name="quantizationInterval">
+			<value>8</value>
+		</property>
 		<property name="name">
 			<value>Level 2</value>
+		</property>
+		<property name="looping">
+			<value>2</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{8a35b21a-1758-482a-a925-b5223741ae0e}</destination>
@@ -624,8 +636,14 @@
 		<property name="length">
 			<value>40.851063829787236</value>
 		</property>
+		<property name="quantizationInterval">
+			<value>8</value>
+		</property>
 		<property name="name">
 			<value>Level 3</value>
+		</property>
+		<property name="looping">
+			<value>2</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{8a35b21a-1758-482a-a925-b5223741ae0e}</destination>
@@ -644,8 +662,14 @@
 		<property name="length">
 			<value>40.851063829787236</value>
 		</property>
+		<property name="quantizationInterval">
+			<value>8</value>
+		</property>
 		<property name="name">
 			<value>Level 4</value>
+		</property>
+		<property name="looping">
+			<value>2</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{8a35b21a-1758-482a-a925-b5223741ae0e}</destination>
@@ -664,8 +688,14 @@
 		<property name="length">
 			<value>40.851063829787236</value>
 		</property>
+		<property name="quantizationInterval">
+			<value>8</value>
+		</property>
 		<property name="name">
 			<value>Level 5</value>
+		</property>
+		<property name="looping">
+			<value>2</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{8a35b21a-1758-482a-a925-b5223741ae0e}</destination>
@@ -684,8 +714,14 @@
 		<property name="length">
 			<value>40.851063829787236</value>
 		</property>
+		<property name="quantizationInterval">
+			<value>8</value>
+		</property>
 		<property name="name">
 			<value>Level 6</value>
+		</property>
+		<property name="looping">
+			<value>2</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{8a35b21a-1758-482a-a925-b5223741ae0e}</destination>

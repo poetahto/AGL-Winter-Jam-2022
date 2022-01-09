@@ -17,8 +17,11 @@ namespace Game.Gameplay.Radio
         [SerializeField] private float messageFrequencySeconds = 10f;
         [SerializeField] private float messageAutoClearSeconds = 10f;
         [SerializeField] private float oneOffChance = 0.5f;
-        [SerializeField] private float radioFadeInSeconds = 1f;
-        [SerializeField] private float radioFadeOutSeconds = 1f;
+        [SerializeField] private float radioIntroSeconds = 1f;
+        [SerializeField] private float radioOutroSeconds = 1f;
+        [SerializeField] private float radioSpawnY;
+        [SerializeField] private float radioDisplayedY;
+        [SerializeField] private float radioExitY;
 
         private List<RadioMessageModel> _oneOffMessages;
         private HashSet<RadioMessageCategory> _categories;
@@ -39,6 +42,8 @@ namespace Game.Gameplay.Radio
 
         private async UniTaskVoid SendMessages(CancellationToken token)
         {
+            await UniTask.Delay(TimeSpan.FromSeconds(messageFrequencySeconds), cancellationToken: token);
+            
             while (!token.IsCancellationRequested)
                 await ShowNewMessage(token);
         }
@@ -117,9 +122,15 @@ namespace Game.Gameplay.Radio
 
             radioMessageView.textDisplay.UpdateText(messageToShow.message);
 
+            radioMessageView.canvasGroup.alpha = 1;
             radioMessageView.canvasGroup.interactable = true;
             radioMessageView.canvasGroup.blocksRaycasts = true;
-            await radioMessageView.canvasGroup.DOFade(1, radioFadeInSeconds).WithCancellation(token);
+            
+            Vector3 curPos = radioMessageView.canvasGroup.transform.position;
+            curPos.y = radioSpawnY;
+            radioMessageView.canvasGroup.transform.position = curPos;
+            
+            await radioMessageView.canvasGroup.transform.DOLocalMoveY(radioDisplayedY, radioIntroSeconds).SetEase(Ease.OutQuint).WithCancellation(token);
             
             UniTask userInput = radioMessageView.clearButton.OnClickAsync(token);
             UniTask autoClear = UniTask.Delay(TimeSpan.FromSeconds(messageAutoClearSeconds), cancellationToken: token);
@@ -127,8 +138,11 @@ namespace Game.Gameplay.Radio
 
             radioMessageView.canvasGroup.interactable = false;
             radioMessageView.canvasGroup.blocksRaycasts = false;
-            await radioMessageView.canvasGroup.DOFade(0, radioFadeOutSeconds).WithCancellation(token);
             
+            UniTask slideOut = radioMessageView.canvasGroup.transform.DOLocalMoveY(radioExitY, radioOutroSeconds).SetEase(Ease.OutCubic).WithCancellation(token);
+            UniTask fadeOut = radioMessageView.canvasGroup.DOFade(0, radioOutroSeconds).WithCancellation(token);
+
+            await UniTask.WhenAll(slideOut, fadeOut);
             await UniTask.Delay(TimeSpan.FromSeconds(messageFrequencySeconds), cancellationToken: token);
             
             Debug.Log(messageToShow.message);

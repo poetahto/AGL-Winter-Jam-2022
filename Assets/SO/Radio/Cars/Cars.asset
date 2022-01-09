@@ -14,3 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messages:
   - {fileID: 11400000, guid: 75c6153b78551014ab6c68411e7fab33, type: 2}
+  - {fileID: 11400000, guid: a4edd49b443ac4871b45d2493d2e16f8, type: 2}
+  - {fileID: 11400000, guid: da644ae60fa7341d3b135ad476b8764a, type: 2}
+  - {fileID: 11400000, guid: 63894e5c7b37a47a78135c353206ae62, type: 2}
+  - {fileID: 11400000, guid: 843bbc2d4faaf4e489eeff93fd560ab2, type: 2}
+  - {fileID: 11400000, guid: 37fbde554a8f4482880c11c0a47095ff, type: 2}
+  - {fileID: 11400000, guid: 22f1b4020ea974db19a0b9783fe16170, type: 2}
+  - {fileID: 11400000, guid: 15d0b03f5376c493f88624360eb6879e, type: 2}
+  - {fileID: 11400000, guid: ae99c4a271fe3401383e10ea20f944e0, type: 2}
+  - {fileID: 11400000, guid: 68147cdef6aa8438cb79dee456aeecdc, type: 2}
+  - {fileID: 11400000, guid: 5dd4afdb356b14698aa8f8981b685db6, type: 2}
+  - {fileID: 11400000, guid: 008e9e3f30cd34e5a88c268cdc6a56cb, type: 2}

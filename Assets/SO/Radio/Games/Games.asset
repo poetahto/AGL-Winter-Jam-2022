@@ -14,3 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messages:
   - {fileID: 11400000, guid: ef2e6b11f23de8b46ae4996e07385da0, type: 2}
+  - {fileID: 11400000, guid: 875245d452c3240adb9b39b798fe7bb9, type: 2}
+  - {fileID: 11400000, guid: 372ac62d00afa473a92a0293fe7c0515, type: 2}
+  - {fileID: 11400000, guid: d7ffe27bdc3e748c9a856792c301af0e, type: 2}

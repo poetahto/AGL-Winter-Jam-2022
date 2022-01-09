@@ -13,4 +13,13 @@ MonoBehaviour:
   m_Name: Food
   m_EditorClassIdentifier: 
   messages:
+  - {fileID: 11400000, guid: c992816bb55384dfea80ceac0d6f0e1d, type: 2}
   - {fileID: 11400000, guid: c8b7c15b397a13a478a24b5518a116b8, type: 2}
+  - {fileID: 11400000, guid: 2c36f0d4631cf4f589a57d9016c3f9ba, type: 2}
+  - {fileID: 11400000, guid: 157f30e8c3bf647349ca8875eaf28a98, type: 2}
+  - {fileID: 11400000, guid: fb55258b2cad54a7b858dd7d93df3fb8, type: 2}
+  - {fileID: 11400000, guid: 32f5faf8bc0754ebda0145c84d2da0a2, type: 2}
+  - {fileID: 11400000, guid: 5a4f30ac65942415c9c85a50eaefc41c, type: 2}
+  - {fileID: 11400000, guid: 8be373398f8d242b9b69bdcb218c7883, type: 2}
+  - {fileID: 11400000, guid: 17debd4f1e9d1407cb6be46e23464efe, type: 2}
+  - {fileID: 11400000, guid: 249209e0bf83e453cbca9059fb02c729, type: 2}

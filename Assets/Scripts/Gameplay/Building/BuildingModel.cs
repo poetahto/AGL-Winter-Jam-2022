@@ -10,6 +10,9 @@ namespace Game.Gameplay.Building
         public DoubleReactiveProperty buildingTime;
         public DoubleReactiveProperty unlockThreshold;
 
+        public GameObject finishedPrefab;
+        public GameObject constructionPrefab;
+        
         public ResourceChange[] costs;
         public ResourceChange[] rewards;
     }

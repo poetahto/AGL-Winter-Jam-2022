@@ -18,6 +18,8 @@ MonoBehaviour:
     value: 120
   unlockThreshold:
     value: 25000
+  finishedPrefab: {fileID: 4027034980837793831, guid: b48972b741957d64d81cf7bdee7b9c20, type: 3}
+  constructionPrefab: {fileID: 3235427042388473962, guid: 07fd2c544cf56244b80fbc95ccb2b3d7, type: 3}
   costs:
   - resource: {fileID: 11400000, guid: 76c6fc1b21a1b0947a9d12b49cc5666d, type: 2}
     amount:

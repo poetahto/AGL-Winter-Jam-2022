@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -66,10 +66,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -102,7 +102,238 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: GJ22_SSCity_Spaceport_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 74
+        width: 481
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 710149e566c332a468510ca338e87360
+      internalID: 1392702368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Spaceport_1
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 74
+        width: 481
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 167139417acdb084987b99560350f344
+      internalID: 2021588735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Spaceport_2
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 74
+        width: 479
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 041135b78142a4a4194a8c0708412931
+      internalID: -360589867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Spaceport_3
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 74
+        width: 478
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e050eb9dbb05f1498d6bb06b2ceb104
+      internalID: 1756929985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Spaceport_4
+      rect:
+        serializedVersion: 2
+        x: 2062
+        y: 74
+        width: 482
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a5b5a0eaf49cd498f4ac075474fc0a
+      internalID: 798668633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Spaceport_5
+      rect:
+        serializedVersion: 2
+        x: 2574
+        y: 74
+        width: 481
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b8873017f5074468bc75c5a5edbe42
+      internalID: -343900876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Spaceport_6
+      rect:
+        serializedVersion: 2
+        x: 3085
+        y: 74
+        width: 482
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5af50eff2ffce649876b4bad43ae3f8
+      internalID: -208462751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Spaceport_7
+      rect:
+        serializedVersion: 2
+        x: 3597
+        y: 74
+        width: 481
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94eba17d5cb68d48bb56ae5c8763b98
+      internalID: 1135921914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Spaceport_8
+      rect:
+        serializedVersion: 2
+        x: 4301
+        y: 215
+        width: 102
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91f10d84bd4cfac4caef2ac4032880fe
+      internalID: 381182994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Spaceport_9
+      rect:
+        serializedVersion: 2
+        x: 4815
+        y: 179
+        width: 99
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1160cfba4a377547a7f4a03a0e53c1e
+      internalID: -1768663755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GJ22_SSCity_Spaceport_10
+      rect:
+        serializedVersion: 2
+        x: 5327
+        y: 165
+        width: 99
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b786efc0ff134e47bf94df90a1858b3
+      internalID: -757280531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -113,7 +344,18 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GJ22_SSCity_Spaceport_9: -1768663755
+      GJ22_SSCity_Spaceport_8: 381182994
+      GJ22_SSCity_Spaceport_3: 1756929985
+      GJ22_SSCity_Spaceport_7: 1135921914
+      GJ22_SSCity_Spaceport_6: -208462751
+      GJ22_SSCity_Spaceport_10: -757280531
+      GJ22_SSCity_Spaceport_1: 2021588735
+      GJ22_SSCity_Spaceport_0: 1392702368
+      GJ22_SSCity_Spaceport_4: 798668633
+      GJ22_SSCity_Spaceport_5: -343900876
+      GJ22_SSCity_Spaceport_2: -360589867
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

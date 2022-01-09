@@ -210,6 +210,7 @@ MonoBehaviour:
   costFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
   rewardFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
   timeFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
+  playerTransform: {fileID: 1622721491}
 --- !u!1 &3539308
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,6 +439,7 @@ MonoBehaviour:
   costFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
   rewardFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
   timeFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
+  playerTransform: {fileID: 1622721491}
 --- !u!1 &11385238
 GameObject:
   m_ObjectHideFlags: 0
@@ -1314,6 +1316,7 @@ MonoBehaviour:
   costFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
   rewardFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
   timeFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
+  playerTransform: {fileID: 1622721491}
 --- !u!1001 &137136708
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2042,7 +2045,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &216740873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2138,7 +2141,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 218130816}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.4900005, y: 0.34999993, z: -10}
+  m_LocalPosition: {x: 1.19, y: -0.22, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2801,6 +2804,7 @@ MonoBehaviour:
   costFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
   rewardFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
   timeFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
+  playerTransform: {fileID: 1622721491}
 --- !u!1001 &325507556
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4537,7 +4541,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 448126196}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.4900005, y: 0.34999993, z: -10}
+  m_LocalPosition: {x: 1.19, y: -0.22, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4707,6 +4711,7 @@ MonoBehaviour:
   costFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
   rewardFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
   timeFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
+  playerTransform: {fileID: 1622721491}
 --- !u!1 &464065434
 GameObject:
   m_ObjectHideFlags: 0
@@ -7587,6 +7592,7 @@ MonoBehaviour:
   costFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
   rewardFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
   timeFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
+  playerTransform: {fileID: 1622721491}
 --- !u!1 &880201448
 GameObject:
   m_ObjectHideFlags: 0
@@ -8843,6 +8849,7 @@ MonoBehaviour:
   costFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
   rewardFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
   timeFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
+  playerTransform: {fileID: 1622721491}
 --- !u!1 &1007936384
 GameObject:
   m_ObjectHideFlags: 0
@@ -9094,6 +9101,7 @@ MonoBehaviour:
   costFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
   rewardFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
   timeFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
+  playerTransform: {fileID: 1622721491}
 --- !u!1001 &1029691362
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28914,7 +28922,7 @@ MonoBehaviour:
   m_LightType: 4
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9529412, g: 0.88235295, b: 0.7607843, a: 1}
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
@@ -31011,6 +31019,7 @@ MonoBehaviour:
   costFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
   rewardFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
   timeFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
+  playerTransform: {fileID: 1622721491}
 --- !u!1001 &1576010746
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31556,6 +31565,7 @@ MonoBehaviour:
   costFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
   rewardFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
   timeFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
+  playerTransform: {fileID: 1622721491}
 --- !u!1001 &1634579354
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32722,6 +32732,7 @@ MonoBehaviour:
   costFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
   rewardFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
   timeFormatter: {fileID: 11400000, guid: 25ca1ee5ef697cf4fbb4d2ddf70c285d, type: 2}
+  playerTransform: {fileID: 1622721491}
 --- !u!1 &1786776213
 GameObject:
   m_ObjectHideFlags: 3
@@ -32767,7 +32778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 2.3000004, y: 0.56999993, z: 0}
+  m_TrackedObjectOffset: {x: 0, y: 0, z: 0}
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
@@ -35097,6 +35108,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2102071559}
   - component: {fileID: 2102071558}
+  - component: {fileID: 2102071560}
   m_Layer: 0
   m_Name: Time Controller
   m_TagString: Untagged
@@ -35196,6 +35208,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2102071560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102071557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4afdcb1cbadf954ba8b1cf465429e17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2131480961
 GameObject:
   m_ObjectHideFlags: 0

@@ -18,6 +18,8 @@ namespace Game.Gameplay.Building
         [SerializeField] private ValueFormatter costFormatter;
         [SerializeField] private ValueFormatter rewardFormatter;
         [SerializeField] private ValueFormatter timeFormatter;
+
+        [SerializeField] private Transform playerTransform;
         
         private void Start()
         {
@@ -133,6 +135,7 @@ namespace Game.Gameplay.Building
                 cost.Apply();
 
             _remainingTime.Value = buildingModel.buildingTime.Value;
+            GameObject constructionPrefab = Instantiate(buildingModel.constructionPrefab, playerTransform.position, Quaternion.identity);
             
             while (_remainingTime.Value > 0)
             {
@@ -142,6 +145,9 @@ namespace Game.Gameplay.Building
 
             foreach (ResourceChange reward in buildingModel.rewards)
                 reward.Apply();
+            
+            Instantiate(buildingModel.finishedPrefab, constructionPrefab.transform.position, Quaternion.identity);
+            Destroy(constructionPrefab);
         }
     }
 }

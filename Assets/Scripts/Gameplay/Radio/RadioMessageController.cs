@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Threading;
 using Cysharp.Threading.Tasks;
 using DG.Tweening;
+using DG.Tweening.Core;
+using DG.Tweening.Plugins.Options;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -130,12 +132,15 @@ namespace Game.Gameplay.Radio
             curPos.y = radioSpawnY;
             radioMessageView.rectTransform.anchoredPosition = curPos;
             
-            await radioMessageView.rectTransform.DOAnchorPosY(radioDisplayedY, radioIntroSeconds).SetEase(Ease.OutQuint).WithCancellation(token);
+            TweenerCore<Vector2, Vector2, VectorOptions> introAnimation = radioMessageView.rectTransform
+                .DOAnchorPosY(radioDisplayedY, radioIntroSeconds)
+                .SetEase(Ease.OutQuint);
             
             UniTask userInput = radioMessageView.clearButton.OnClickAsync(token);
             UniTask autoClear = UniTask.Delay(TimeSpan.FromSeconds(messageAutoClearSeconds), cancellationToken: token);
             await UniTask.WhenAny(userInput, autoClear);
 
+            introAnimation.Kill();
             radioMessageView.canvasGroup.interactable = false;
             radioMessageView.canvasGroup.blocksRaycasts = false;
             

@@ -126,11 +126,11 @@ namespace Game.Gameplay.Radio
             radioMessageView.canvasGroup.interactable = true;
             radioMessageView.canvasGroup.blocksRaycasts = true;
             
-            Vector3 curPos = radioMessageView.canvasGroup.transform.position;
+            Vector2 curPos = radioMessageView.rectTransform.anchoredPosition;
             curPos.y = radioSpawnY;
-            radioMessageView.canvasGroup.transform.position = curPos;
+            radioMessageView.rectTransform.anchoredPosition = curPos;
             
-            await radioMessageView.canvasGroup.transform.DOLocalMoveY(radioDisplayedY, radioIntroSeconds).SetEase(Ease.OutQuint).WithCancellation(token);
+            await radioMessageView.rectTransform.DOAnchorPosY(radioDisplayedY, radioIntroSeconds).SetEase(Ease.OutQuint).WithCancellation(token);
             
             UniTask userInput = radioMessageView.clearButton.OnClickAsync(token);
             UniTask autoClear = UniTask.Delay(TimeSpan.FromSeconds(messageAutoClearSeconds), cancellationToken: token);
@@ -139,7 +139,7 @@ namespace Game.Gameplay.Radio
             radioMessageView.canvasGroup.interactable = false;
             radioMessageView.canvasGroup.blocksRaycasts = false;
             
-            UniTask slideOut = radioMessageView.canvasGroup.transform.DOLocalMoveY(radioExitY, radioOutroSeconds).SetEase(Ease.OutCubic).WithCancellation(token);
+            UniTask slideOut = radioMessageView.rectTransform.DOAnchorPosY(radioExitY, radioOutroSeconds).SetEase(Ease.OutCubic).WithCancellation(token);
             UniTask fadeOut = radioMessageView.canvasGroup.DOFade(0, radioOutroSeconds).WithCancellation(token);
 
             await UniTask.WhenAll(slideOut, fadeOut);

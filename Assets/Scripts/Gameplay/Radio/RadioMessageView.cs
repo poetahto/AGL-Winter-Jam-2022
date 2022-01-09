@@ -9,5 +9,6 @@ namespace Game.Gameplay.Radio
         public Display textDisplay;
         public Button clearButton;
         public CanvasGroup canvasGroup;
+        public RectTransform rectTransform;
     }
 }

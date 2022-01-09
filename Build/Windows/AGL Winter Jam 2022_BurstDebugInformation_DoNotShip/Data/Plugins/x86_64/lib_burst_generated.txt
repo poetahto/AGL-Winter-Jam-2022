@@ -139,6 +139,14 @@ Library: lib_burst_generated
 --compilation-defines=ENABLE_SPRITESHAPE_BURST
 --compilation-defines=UNITASK_DOTWEEN_SUPPORT
 --compilation-defines=UNITASK_TEXTMESHPRO_SUPPORT
+--compilation-defines=CINEMACHINE_TIMELINE
+--compilation-defines=CINEMACHINE_PHYSICS_2D
+--compilation-defines=CINEMACHINE_PHYSICS
+--compilation-defines=CINEMACHINE_UGUI
+--compilation-defines=CINEMACHINE_LWRP_7_3_1
+--compilation-defines=CINEMACHINE_PIXEL_PERFECT_2_0_3
+--compilation-defines=CINEMACHINE_UNITY_ANIMATION
+--compilation-defines=CINEMACHINE_UNITY_IMGUI
 --linker-options=PdbAltPath="AGL Winter Jam 2022_Data/Plugins/x86_64"
 --debug=Full
 --output=C:\Users\Daniel\Documents\Programming\Unity\AGL Winter Jam 2022\Temp\StagingArea\Data\Plugins\x86_64\lib_burst_generated
@@ -170,6 +178,8 @@ Library: lib_burst_generated
 --root-assembly=C:\Users\Daniel\Documents\Programming\Unity\AGL Winter Jam 2022\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.Universal.Shaders.dll
 --root-assembly=C:\Users\Daniel\Documents\Programming\Unity\AGL Winter Jam 2022\Temp\StagingArea\Data\Managed\UniTask.Addressables.dll
 --root-assembly=C:\Users\Daniel\Documents\Programming\Unity\AGL Winter Jam 2022\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
+--root-assembly=C:\Users\Daniel\Documents\Programming\Unity\AGL Winter Jam 2022\Temp\StagingArea\Data\Managed\UIEffect.dll
+--root-assembly=C:\Users\Daniel\Documents\Programming\Unity\AGL Winter Jam 2022\Temp\StagingArea\Data\Managed\Cinemachine.dll
 --assembly-folder=C:\Users\Daniel\Documents\Programming\Unity\AGL Winter Jam 2022\Temp\StagingArea\Data\Managed\
 --pdb-search-paths=Temp/ManagedSymbols/
 --method=Unity.Jobs.IJobForExtensions+ForJobStruct`1[[UnityEngine.Rendering.Universal.ReorderJob`1[[UnityEngine.Rendering.Universal.LightMinMaxZ, Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(UnityEngine.Rendering.Universal.ReorderJob`1[[UnityEngine.Rendering.Universal.LightMinMaxZ, Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]&, Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--e943843acfb78f5f2f3716a6553740d9
@@ -326,6 +336,14 @@ Library: lib_burst_generated
 --compilation-defines=ENABLE_SPRITESHAPE_BURST
 --compilation-defines=UNITASK_DOTWEEN_SUPPORT
 --compilation-defines=UNITASK_TEXTMESHPRO_SUPPORT
+--compilation-defines=CINEMACHINE_TIMELINE
+--compilation-defines=CINEMACHINE_PHYSICS_2D
+--compilation-defines=CINEMACHINE_PHYSICS
+--compilation-defines=CINEMACHINE_UGUI
+--compilation-defines=CINEMACHINE_LWRP_7_3_1
+--compilation-defines=CINEMACHINE_PIXEL_PERFECT_2_0_3
+--compilation-defines=CINEMACHINE_UNITY_ANIMATION
+--compilation-defines=CINEMACHINE_UNITY_IMGUI
 --linker-options=PdbAltPath="AGL Winter Jam 2022_Data/Plugins/x86_64"
 --debug=Full
 --output=C:\Users\Daniel\Documents\Programming\Unity\AGL Winter Jam 2022\Temp\StagingArea\Data\Plugins\x86_64\lib_burst_generated
@@ -357,6 +375,8 @@ Library: lib_burst_generated
 --root-assembly=C:\Users\Daniel\Documents\Programming\Unity\AGL Winter Jam 2022\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.Universal.Shaders.dll
 --root-assembly=C:\Users\Daniel\Documents\Programming\Unity\AGL Winter Jam 2022\Temp\StagingArea\Data\Managed\UniTask.Addressables.dll
 --root-assembly=C:\Users\Daniel\Documents\Programming\Unity\AGL Winter Jam 2022\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
+--root-assembly=C:\Users\Daniel\Documents\Programming\Unity\AGL Winter Jam 2022\Temp\StagingArea\Data\Managed\UIEffect.dll
+--root-assembly=C:\Users\Daniel\Documents\Programming\Unity\AGL Winter Jam 2022\Temp\StagingArea\Data\Managed\Cinemachine.dll
 --assembly-folder=C:\Users\Daniel\Documents\Programming\Unity\AGL Winter Jam 2022\Temp\StagingArea\Data\Managed\
 --pdb-search-paths=Temp/ManagedSymbols/
 --method=Unity.Jobs.IJobForExtensions+ForJobStruct`1[[UnityEngine.Rendering.Universal.ReorderJob`1[[UnityEngine.Rendering.Universal.LightMinMaxZ, Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(UnityEngine.Rendering.Universal.ReorderJob`1[[UnityEngine.Rendering.Universal.LightMinMaxZ, Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]&, Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--e943843acfb78f5f2f3716a6553740d9

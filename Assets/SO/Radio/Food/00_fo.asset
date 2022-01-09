@@ -12,5 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 909b7569a70a4ff48d6e9a9d04fdc694, type: 3}
   m_Name: 00_fo
   m_EditorClassIdentifier: 
-  message: Slindies announces new "Onionator" packed with Onion Rings, Raw Onion,
-    and Carmalized Onion all with an Onion Flavored N&N Shake (w/ Raw Onion bits)
+  message: 

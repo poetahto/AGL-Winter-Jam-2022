@@ -99,11 +99,6 @@ Library: lib_burst_generated
 --compilation-defines=ENABLE_MONO
 --compilation-defines=NET_STANDARD_2_0
 --compilation-defines=NET_STANDARD
---compilation-defines=DEVELOPMENT_BUILD
---compilation-defines=ENABLE_PROFILER
---compilation-defines=DEBUG
---compilation-defines=TRACE
---compilation-defines=UNITY_ASSERTIONS
 --compilation-defines=UNITY_PRO_LICENSE
 --compilation-defines=ENABLE_CUSTOM_RENDER_TEXTURE
 --compilation-defines=ENABLE_DIRECTOR
@@ -148,7 +143,6 @@ Library: lib_burst_generated
 --compilation-defines=CINEMACHINE_UNITY_ANIMATION
 --compilation-defines=CINEMACHINE_UNITY_IMGUI
 --linker-options=PdbAltPath="AGL Winter Jam 2022_Data/Plugins/x86_64"
---debug=Full
 --output=C:\Users\Daniel\Documents\Programming\Unity\AGL Winter Jam 2022\Temp\StagingArea\Data\Plugins\x86_64\lib_burst_generated
 --root-assembly=C:\Users\Daniel\Documents\Programming\Unity\AGL Winter Jam 2022\Temp\StagingArea\Data\Managed\UnityEngine.UI.dll
 --root-assembly=C:\Users\Daniel\Documents\Programming\Unity\AGL Winter Jam 2022\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.Core.Runtime.dll
@@ -296,11 +290,6 @@ Library: lib_burst_generated
 --compilation-defines=ENABLE_MONO
 --compilation-defines=NET_STANDARD_2_0
 --compilation-defines=NET_STANDARD
---compilation-defines=DEVELOPMENT_BUILD
---compilation-defines=ENABLE_PROFILER
---compilation-defines=DEBUG
---compilation-defines=TRACE
---compilation-defines=UNITY_ASSERTIONS
 --compilation-defines=UNITY_PRO_LICENSE
 --compilation-defines=ENABLE_CUSTOM_RENDER_TEXTURE
 --compilation-defines=ENABLE_DIRECTOR
@@ -345,7 +334,6 @@ Library: lib_burst_generated
 --compilation-defines=CINEMACHINE_UNITY_ANIMATION
 --compilation-defines=CINEMACHINE_UNITY_IMGUI
 --linker-options=PdbAltPath="AGL Winter Jam 2022_Data/Plugins/x86_64"
---debug=Full
 --output=C:\Users\Daniel\Documents\Programming\Unity\AGL Winter Jam 2022\Temp\StagingArea\Data\Plugins\x86_64\lib_burst_generated
 --root-assembly=C:\Users\Daniel\Documents\Programming\Unity\AGL Winter Jam 2022\Temp\StagingArea\Data\Managed\UnityEngine.UI.dll
 --root-assembly=C:\Users\Daniel\Documents\Programming\Unity\AGL Winter Jam 2022\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.Core.Runtime.dll

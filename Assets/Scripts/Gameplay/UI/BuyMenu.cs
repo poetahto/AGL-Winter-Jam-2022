@@ -1,4 +1,5 @@
 ﻿using DG.Tweening;
+using FMODUnity;
 using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,6 +11,8 @@ namespace Game.UI
         [SerializeField] private Button openMenuButton;
         [SerializeField] private Button closeMenuButton;
         [SerializeField] private RectTransform menuTransform;
+        [SerializeField] private StudioEventEmitter mainMusic;
+        [SerializeField] private StudioEventEmitter buyMusic;
         
         [SerializeField] private float menuClosedPosition;
         [SerializeField] private float menuCloseDuration;
@@ -34,6 +37,9 @@ namespace Game.UI
         
         public void OpenMenu()
         {
+            buyMusic.Play();
+            mainMusic.EventInstance.setPaused(true);
+
             _isOpen = true;
             _currentAnim.Kill();
             _currentAnim = menuTransform.DOAnchorPosX(menuOpenPosition, menuOpenDuration);
@@ -41,6 +47,9 @@ namespace Game.UI
         
         public void CloseMenu()
         {
+            buyMusic.Stop();
+            mainMusic.EventInstance.setPaused(false);
+            
             _isOpen = false;
             _currentAnim.Kill();
             _currentAnim = menuTransform.DOAnchorPosX(menuClosedPosition, menuCloseDuration);

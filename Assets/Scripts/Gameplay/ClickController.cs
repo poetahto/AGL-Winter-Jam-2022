@@ -1,4 +1,5 @@
 ﻿using UniRx;
+using UniRx.Triggers;
 using UnityEngine;
 
 namespace Game.Gameplay
@@ -9,10 +10,9 @@ namespace Game.Gameplay
         
         private void Awake()
         {
-            Observable.EveryUpdate()
+            gameObject.UpdateAsObservable()
                 .Where(_ => Input.GetMouseButtonDown(0))
-                .Subscribe(_ => ApplyRewards())
-                .AddTo(this);
+                .Subscribe(_ => ApplyRewards()).AddTo(this);
         }
 
         private void ApplyRewards()

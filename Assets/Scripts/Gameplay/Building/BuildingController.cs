@@ -4,6 +4,7 @@ using Cysharp.Threading.Tasks;
 using FMODUnity;
 using Game.UI;
 using UniRx;
+using UniRx.Triggers;
 using UnityEngine;
 
 namespace Game.Gameplay.Building
@@ -27,7 +28,8 @@ namespace Game.Gameplay.Building
         {
             unlockResource.currentValue
                 .Select(value => value >= buildingModel.unlockThreshold.Value)
-                .Subscribe(isUnlocked => buildingView.Locked = !isUnlocked);
+                .Subscribe(isUnlocked => buildingView.Locked = !isUnlocked)
+                .AddTo(this);
             
             BindObjectChanges();
             
@@ -43,36 +45,37 @@ namespace Game.Gameplay.Building
             if (buildingView.HasCost)
             {
                 foreach (ResourceChange cost in buildingModel.costs)
-                    cost.amount.Subscribe(_ => UpdateCost());
+                    cost.amount.Subscribe(_ => UpdateCost()).AddTo(this);
             }
 
             if (buildingView.HasReward)
             {
                 foreach (ResourceChange reward in buildingModel.rewards)
-                    reward.amount.Subscribe(_ => UpdateReward());
+                    reward.amount.Subscribe(_ => UpdateReward()).AddTo(this);
             }
 
             if (buildingView.remainingTimeDisplay != null)
             {
                 _remainingTime
                     .Select(timeFormatter.Format)
-                    .Subscribe(buildingView.remainingTimeDisplay.UpdateText);    
+                    .Subscribe(buildingView.remainingTimeDisplay.UpdateText)
+                    .AddTo(this);    
             }
         }
 
         private void BindObjectChanges()
         {
-            Observable.EveryUpdate()
+            gameObject.UpdateAsObservable()
                 .Where(_ => CanAfford() == false && _remainingTime.Value <= 0)
                 .Subscribe(_ => buildingView.SetStatus(BuildingView.Status.TooExpensive))
                 .AddTo(this);
             
-            Observable.EveryUpdate()
+            gameObject.UpdateAsObservable()
                 .Where(_ => _remainingTime.Value <= 0 && CanAfford())
                 .Subscribe(_ => buildingView.SetStatus(BuildingView.Status.Available))
                 .AddTo(this);
 
-            Observable.EveryUpdate()
+            gameObject.UpdateAsObservable()
                 .Where(_ => _remainingTime.Value > 0)
                 .Subscribe(_ => buildingView.SetStatus(BuildingView.Status.InProgress))
                 .AddTo(this);
@@ -108,7 +111,7 @@ namespace Game.Gameplay.Building
         {
             buildingModel.buildingTime
                 .Select(timeFormatter.Format)
-                .Subscribe(buildingView.timeDisplay.UpdateText);
+                .Subscribe(buildingView.timeDisplay.UpdateText).AddTo(this);
         }
 
         private void BindCreateBuilding()

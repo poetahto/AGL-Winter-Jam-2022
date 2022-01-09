@@ -31,19 +31,19 @@ namespace Game.UI
             
             resourceModel.currentValue
                 .Select(valueFormatter)
-                .Subscribe(resourceView.valueDisplay.UpdateText);    
+                .Subscribe(resourceView.valueDisplay.UpdateText).AddTo(this);    
         }
 
         private void BindName()
         {
             resourceModel.currentName
-                .Subscribe(resourceView.nameDisplay.UpdateText);    
+                .Subscribe(resourceView.nameDisplay.UpdateText).AddTo(this);    
         }
 
         private void BindDescription()
         {
             resourceModel.currentDescription
-                .Subscribe(resourceView.descriptionDisplay.UpdateText);  
+                .Subscribe(resourceView.descriptionDisplay.UpdateText).AddTo(this);  
         }
 
         private Func<double, string> GetValueFormatter()
